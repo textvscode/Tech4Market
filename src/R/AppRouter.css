@@ -1,0 +1,76 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background: rgba(21, 21, 21, 0.8);
+  backdrop-filter: blur(10px);
+  margin-left: -50px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #00bfff;
+  scale: 1.1;
+}
+
+.n1 {
+  animation: easeOut 3s;
+}
+
+.n2 {
+  animation: easeOut 4.5s;
+}
+
+.n3 {
+  animation: easeOut 5s;
+}
+
+.n4 {
+  margin-top: -5px;
+  background: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: easeOut 5.5s;
+}
+
+.n4:hover {
+  background: #00bfff;
+  color: white;
+  scale: 1.1;
+}
+
+@keyframes easeOut {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    margin-left: -20px;
+  }
+}

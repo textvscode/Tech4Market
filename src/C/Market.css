@@ -1,0 +1,121 @@
+.market-container {
+min-height: 100vh;
+background: #0b0b0b;
+color: white;
+padding: 120px 50px 50px;
+background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://kbdfans.com/cdn/shop/files/6_3be2738f-2257-4b13-8a05-6698be86abfb.jpg?v=1735199636");
+    background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+}
+
+.market-container h1 {
+text-align: center;
+font-size: 60px;
+margin-bottom: 50px;
+color: #ffffff;
+text-shadow: 0 0 5px #ffffff;
+transition: 0.3s;
+}
+
+.market-container h1:hover {
+color: #00bfff;
+text-shadow: 0 0 15px #00bfff;
+scale: 1.05;
+}
+
+.market-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 30px;
+
+  list-style: none;
+  padding: 0;
+}
+
+
+.market-container li {
+  width: 330px;
+
+  background: #161616;
+  border-radius: 20px;
+  overflow: hidden;
+
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+
+.market-container li:hover {
+transform: translateY(-10px);
+box-shadow: 0 0 25px #00bfff;
+}
+
+.market-container img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+.market-container h2 {
+padding: 15px 20px 5px;
+color: white;
+}
+
+.m-btn {
+background: transparent;
+padding: 10px 20px;
+margin: 15px 20px;
+border: 2px solid #00bfff;
+color: #00bfff;
+padding: 10px 20px;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s;
+}
+.m-btn:hover {
+background: #00bfff;
+color: white;
+}
+
+.market-container p {
+padding: 0 20px 15px;
+color: #cfcfcf;
+line-height: 1.5;
+}
+
+.market-container p:last-child {
+color: #00bfff;
+font-size: 20px;
+font-weight: bold;
+}
+
+.search-input {
+display: block;
+margin: 0 auto 40px;
+padding: 10px 20px;
+width: 300px;
+border: none;
+border-radius: 30px;
+background: rgba(255, 255, 255, 0.1);
+color: white;
+font-size: 16px;
+transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+.market-container {
+padding: 100px 20px 20px;
+}
+
+.market-container h1 {
+font-size: 40px;
+}
+}
